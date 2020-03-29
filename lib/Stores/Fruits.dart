@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Fruits extends StatefulWidget {
@@ -83,12 +84,10 @@ class _FruitsState extends State<Fruits> {
                     alignment: Alignment.centerLeft,
                     child: Padding(
                       padding: EdgeInsets.only(left: 0),
-                      child: Text(
-                        "Fruits and Vegetables",
-                        style: TextStyle(fontSize: 15.0),
-                      ),
+                      child: Image.asset('path/the_image.png')
                     ),
                   ),
+                  
                   shape: RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(15.0),
                   ),
