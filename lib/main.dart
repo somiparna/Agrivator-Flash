@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Agrivator Flash',
       theme: ThemeData(
         primaryColor: Color(0xFF78b122),
+        accentColor: Color(0xFF2f2e41),
       ),
       home: HomeScreen(),
     );
