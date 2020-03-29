@@ -27,7 +27,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+<<<<<<< Updated upstream
 
+=======
+  google_nav_bar: ^2.1.0
+  imagebutton: ^0.0.6
+>>>>>>> Stashed changes
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
