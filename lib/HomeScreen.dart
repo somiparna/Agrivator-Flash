@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Stores/Fruits.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
+import 'Tabs/Hometab.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -7,6 +9,24 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int _selectedIndex = 0;
+  static const TextStyle optionStyle =
+      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  final _page = <Widget>[
+    HomeTab(),
+    Text(
+      'Index 1: Likes',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 2: Search',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 3: Profile',
+      style: optionStyle,
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,170 +34,47 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.white10,
         elevation: 0,
       ),
-      body: Container(
-        color: Colors.white10,
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 20, top: 8, bottom: 5, right: 20),
-                child: MaterialButton(
-                  padding: EdgeInsets.only(left: 0),
-                  height: MediaQuery.of(context).size.height * 0.14,
-                  minWidth: MediaQuery.of(context).size.width * 0.85,
-                  color: Theme.of(context).primaryColor,
-                  onPressed: () => Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Fruits())),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 25),
-                      child: Text(
-                        "Fruits and Vegetables",
-                        style: TextStyle(fontSize: 25.0),
-                      ),
-                    ),
+      body: Center(
+        child: _page[_selectedIndex],
+      ),
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(color: Theme.of(context).accentColor, boxShadow: [
+          BoxShadow(blurRadius: 20, color: Colors.black.withOpacity(.1))
+        ]),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
+            child: GNav(
+                gap: 8,
+                activeColor: Colors.white,
+                iconSize: 24,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                duration: Duration(milliseconds: 800),
+                tabBackgroundColor: Theme.of(context).primaryColor,
+                tabs: [
+                  GButton(
+                    icon: Icons.access_alarm,
+                    text: 'Home',
                   ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(15.0),
+                  GButton(
+                    icon: Icons.access_alarm,
+                    text: 'Likes',
                   ),
-                  elevation: 5,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 20, top: 8, bottom: 5, right: 20),
-                child: MaterialButton(
-                  padding: EdgeInsets.only(left: 0),
-                  height: MediaQuery.of(context).size.height * 0.14,
-                  minWidth: MediaQuery.of(context).size.width * 0.85,
-                  color: Theme.of(context).primaryColor,
-                  onPressed: () => Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Fruits())),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 25),
-                      child: Text(
-                        "Medicines",
-                        style: TextStyle(fontSize: 25.0),
-                      ),
-                    ),
+                  GButton(
+                    icon: Icons.access_alarm,
+                    text: 'Search',
                   ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(15.0),
+                  GButton(
+                    icon: Icons.access_alarm,
+                    text: 'Profile',
                   ),
-                  elevation: 5,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 20, top: 8, bottom: 5, right: 20),
-                child: MaterialButton(
-                  padding: EdgeInsets.only(left: 0),
-                  height: MediaQuery.of(context).size.height * 0.14,
-                  minWidth: MediaQuery.of(context).size.width * 0.85,
-                  color: Theme.of(context).primaryColor,
-                  onPressed: () => Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Fruits())),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 25),
-                      child: Text(
-                        "Pet Supplies",
-                        style: TextStyle(fontSize: 25.0),
-                      ),
-                    ),
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(15.0),
-                  ),
-                  elevation: 5,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 20, top: 8, bottom: 5, right: 20),
-                child: MaterialButton(
-                  padding: EdgeInsets.only(left: 0),
-                  height: MediaQuery.of(context).size.height * 0.14,
-                  minWidth: MediaQuery.of(context).size.width * 0.85,
-                  color: Theme.of(context).primaryColor,
-                  onPressed: () => Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Fruits())),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 25),
-                      child: Text(
-                        "Groceries",
-                        style: TextStyle(fontSize: 25.0),
-                      ),
-                    ),
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(15.0),
-                  ),
-                  elevation: 5,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 20, top: 8, bottom: 5, right: 20),
-                child: MaterialButton(
-                  padding: EdgeInsets.only(left: 0),
-                  height: MediaQuery.of(context).size.height * 0.14,
-                  minWidth: MediaQuery.of(context).size.width * 0.85,
-                  color: Theme.of(context).primaryColor,
-                  onPressed: () => Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Fruits())),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 25),
-                      child: Text(
-                        "Health and Benefits",
-                        style: TextStyle(fontSize: 25.0),
-                      ),
-                    ),
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(15.0),
-                  ),
-                  elevation: 5,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 20, top: 8, bottom: 5, right: 20),
-                child: MaterialButton(
-                  padding: EdgeInsets.only(left: 0),
-                  height: MediaQuery.of(context).size.height * 0.14,
-                  minWidth: MediaQuery.of(context).size.width * 0.85,
-                  color: Theme.of(context).primaryColor,
-                  onPressed: () => Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Fruits())),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 25),
-                      child: Text(
-                        "Meat and Fish",
-                        style: TextStyle(fontSize: 25.0),
-                      ),
-                    ),
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(15.0),
-                  ),
-                  elevation: 5,
-                ),
-              ),
-            ],
+                ],
+                selectedIndex: _selectedIndex,
+                onTabChange: (index) {
+                  setState(() {
+                    _selectedIndex = index;
+                  });
+                }),
           ),
         ),
       ),
