@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'Stores/Fruits.dart';
+import 'agri_icons.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'Tabs/Hometab.dart';
+import 'Tabs/SearchTab.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -14,25 +15,43 @@ class _HomeScreenState extends State<HomeScreen> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   final _page = <Widget>[
     HomeTab(),
+SearchTab(),
     Text(
-      'Index 1: Likes',
+      'Index 2: List',
       style: optionStyle,
     ),
     Text(
-      'Index 2: Search',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: Profile',
+      'Index 3: User Profile',
       style: optionStyle,
     ),
   ];
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white10,
-        elevation: 0,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(60.0),
+        child: Center(
+          child: AppBar(
+            leading: new Padding(
+              padding: const EdgeInsets.only(left: 10,top: 10),
+              child: new Container(
+                  width: 10.0,
+                  height: 10.0,
+                  decoration: new BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: new DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage('images/user.jpg')
+                      )
+                  )),
+            ),
+            backgroundColor: Colors.white10,
+            elevation: 0,
+
+          ),
+        ),
       ),
       body: Center(
         child: _page[_selectedIndex],
@@ -53,19 +72,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 tabBackgroundColor: Theme.of(context).primaryColor,
                 tabs: [
                   GButton(
-                    icon: Icons.access_alarm,
+                    iconColor: Theme.of(context).primaryColor,
+                    icon: Agri.shopping_cart,
                     text: 'Home',
                   ),
                   GButton(
-                    icon: Icons.access_alarm,
-                    text: 'Likes',
-                  ),
-                  GButton(
-                    icon: Icons.access_alarm,
+                    iconColor: Theme.of(context).primaryColor,
+                    icon: Agri.search,
                     text: 'Search',
                   ),
                   GButton(
-                    icon: Icons.access_alarm,
+                    iconColor: Theme.of(context).primaryColor,
+                    icon: Agri.shopping_list,
+                    text: 'List',
+                  ),
+                  GButton(
+                    iconColor: Theme.of(context).primaryColor,
+                    icon: Agri.user,
                     text: 'Profile',
                   ),
                 ],
@@ -81,3 +104,4 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+

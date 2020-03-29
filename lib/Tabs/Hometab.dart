@@ -1,3 +1,4 @@
+import '../HomeScreen.dart';
 import 'package:flutter/material.dart';
 import '../Stores/Fruits.dart';
 
@@ -16,6 +17,24 @@ class _HomeTabState extends State<HomeTab> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+//            FlatButton(
+////              minWidth: MediaQuery.of(context).size.width *
+////                  0.8590277777777778,
+//              shape: RoundedRectangleBorder(
+//                  borderRadius: BorderRadius.all(Radius.circular(5))
+//              ),
+//              child: Text(
+//                "Search                                            ",
+//                textAlign: TextAlign.start,
+//                style: TextStyle(
+//                    color: Colors.black,
+//                    decoration: TextDecoration.underline,
+//                    fontSize: 20),
+//              ),
+//              color: Colors.white10,
+//              onPressed: () {
+//              },
+//            ),
             Padding(
               padding: const EdgeInsets.only(
                   left: 20, top: 8, bottom: 5, right: 20),
