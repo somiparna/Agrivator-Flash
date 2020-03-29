@@ -1,6 +1,13 @@
+import 'package:agrivatorflash/Stores/Groceries.dart';
+import 'package:agrivatorflash/Stores/Health.dart';
+import 'package:agrivatorflash/Stores/Meat.dart';
+import 'package:agrivatorflash/Stores/Pet.dart';
+import 'package:agrivatorflash/Stores/Stationary.dart';
+
 import '../HomeScreen.dart';
 import 'package:flutter/material.dart';
 import '../Stores/Fruits.dart';
+import '../Stores/Medicines.dart';
 
 class HomeTab extends StatefulWidget {
   @override
@@ -70,7 +77,7 @@ class _HomeTabState extends State<HomeTab> {
                 minWidth: MediaQuery.of(context).size.width * 0.85,
                 color: Theme.of(context).primaryColor,
                 onPressed: () => Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => Fruits())),
+                    .push(MaterialPageRoute(builder: (context) => Medicines())),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
@@ -96,7 +103,7 @@ class _HomeTabState extends State<HomeTab> {
                 minWidth: MediaQuery.of(context).size.width * 0.85,
                 color: Theme.of(context).primaryColor,
                 onPressed: () => Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => Fruits())),
+                    .push(MaterialPageRoute(builder: (context) => Pets())),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
@@ -122,7 +129,7 @@ class _HomeTabState extends State<HomeTab> {
                 minWidth: MediaQuery.of(context).size.width * 0.85,
                 color: Theme.of(context).primaryColor,
                 onPressed: () => Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => Fruits())),
+                    .push(MaterialPageRoute(builder: (context) => Groceries())),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
@@ -148,7 +155,7 @@ class _HomeTabState extends State<HomeTab> {
                 minWidth: MediaQuery.of(context).size.width * 0.85,
                 color: Theme.of(context).primaryColor,
                 onPressed: () => Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => Fruits())),
+                    .push(MaterialPageRoute(builder: (context) => Health())),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
@@ -174,7 +181,7 @@ class _HomeTabState extends State<HomeTab> {
                 minWidth: MediaQuery.of(context).size.width * 0.85,
                 color: Theme.of(context).primaryColor,
                 onPressed: () => Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => Fruits())),
+                    .push(MaterialPageRoute(builder: (context) => Meat())),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
@@ -200,7 +207,7 @@ class _HomeTabState extends State<HomeTab> {
                 minWidth: MediaQuery.of(context).size.width * 0.85,
                 color: Theme.of(context).primaryColor,
                 onPressed: () => Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => Fruits())),
+                    .push(MaterialPageRoute(builder: (context) => Stationary())),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
