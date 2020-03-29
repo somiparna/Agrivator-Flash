@@ -191,6 +191,32 @@ class _HomeTabState extends State<HomeTab> {
                 elevation: 5,
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 20, top: 8, bottom: 5, right: 20),
+              child: MaterialButton(
+                padding: EdgeInsets.only(left: 0),
+                height: MediaQuery.of(context).size.height * 0.14,
+                minWidth: MediaQuery.of(context).size.width * 0.85,
+                color: Theme.of(context).primaryColor,
+                onPressed: () => Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => Fruits())),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 25),
+                    child: Text(
+                      "Stationary",
+                      style: TextStyle(fontSize: 25.0),
+                    ),
+                  ),
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: new BorderRadius.circular(15.0),
+                ),
+                elevation: 5,
+              ),
+            ),
           ],
         ),
       ),
