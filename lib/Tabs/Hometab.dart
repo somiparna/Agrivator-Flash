@@ -37,7 +37,7 @@ class _HomeTabState extends State<HomeTab> {
                   Spacer(),
                   Padding(
                     padding: const EdgeInsets.only(right: 15,),
-                    child: Text("SEE ALL>",style: TextStyle(fontSize: 14)),
+                    child: Text("SEE ALL>",style: TextStyle(fontSize: 14,color: Color(0xFF389583))),
                   )
                 ],
               ),
@@ -207,6 +207,174 @@ class _HomeTabState extends State<HomeTab> {
                         ),
                         Text("Store G",style: TextStyle(fontSize: 13)),
                         Text("3.9 KM",style: TextStyle(fontSize: 10,color: Colors.grey),),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 20,left: 20,),
+              child: Text("Wishlist",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 5, top: 15,bottom: 5,),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: <Widget>[
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                            padding: const EdgeInsets.only(left: 15,  right: 5),
+                            child: Material(
+                                child: InkWell(
+                                  onTap: () =>
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => Error())),
+                                  child: Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
+
+                                      child: Image.asset('images/food.jpg',
+                                          width: 100, height: 100),
+                                    ),),
+                                )
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                            padding: const EdgeInsets.only(left: 15,  right: 5),
+                            child: Material(
+                                child: InkWell(
+                                  onTap: () =>
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => Error())),
+                                  child: Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
+
+                                      child: Image.asset('images/grocery.jpg',
+                                          width: 100, height: 100),
+                                    ),),
+                                )
+                            )
+                        ),
+                        Text("Item 2",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                            padding: const EdgeInsets.only(left: 15,  right: 5),
+                            child: Material(
+                                child: InkWell(
+                                  onTap: () =>
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => Error())),
+                                  child: Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
+
+                                      child: Image.asset('images/health.jpg',
+                                          width: 100, height: 100),
+                                    ),),
+                                )
+                            )
+                        ),
+                        Text("Item 3",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                            padding: const EdgeInsets.only(left: 15,  right: 5),
+                            child: Material(
+                                child: InkWell(
+                                  onTap: () =>
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => Error())),
+                                  child: Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
+
+                                      child: Image.asset('images/meat.jpg',
+                                          width: 100, height: 100),
+                                    ),),
+                                )
+                            )
+                        ),
+                        Text("Item 4",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                            padding: const EdgeInsets.only(left: 15,  right: 5),
+                            child: Material(
+                                child: InkWell(
+                                  onTap: () =>
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => Error())),
+                                  child: Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
+
+                                      child: Image.asset('images/medicines.jpg',
+                                          width: 100, height: 100),
+                                    ),),
+                                )
+                            )
+                        ),
+                        Text("Item 5",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                            padding: const EdgeInsets.only(left: 15,  right: 5),
+                            child: Material(
+                                child: InkWell(
+                                  onTap: () =>
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => Error())),
+                                  child: Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
+
+                                      child: Image.asset('images/pet.jpg',
+                                          width: 100, height: 100),
+                                    ),),
+                                )
+                            )
+                        ),
+                        Text("Item 6",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                            padding: const EdgeInsets.only(left: 15,  right: 5),
+                            child: Material(
+                                child: InkWell(
+                                  onTap: () =>
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => Error())),
+                                  child: Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
+
+                                      child: Image.asset('images/stationary.jpg',
+                                          width: 100, height: 100),
+                                    ),),
+                                )
+                            )
+                        ),
+                        Text("Item 7",style: TextStyle(fontSize: 13)),
                       ],
                     ),
                   ],
