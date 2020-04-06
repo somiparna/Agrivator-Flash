@@ -376,7 +376,7 @@ class _HomeTabState extends State<HomeTab> {
                       ],
                     ),
                   ),
-                  /*Padding(
+                  Padding(
                     padding: const EdgeInsets.only(left: 10,right: 10,top: 15),
                     child: Column(
                       children: <Widget>[
@@ -388,16 +388,16 @@ class _HomeTabState extends State<HomeTab> {
                               child: Container(
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.all(Radius.circular(35)),
-                                  child: Image.asset('images/stationary.jpg',
+                                  child: Image.asset('images/grocery.jpg',
                                       width: 65, height: 65),
                                 ),),
                             )
                         ),
-                        Text("Stationary",style: TextStyle(fontSize: 11)),
+                        Text("Groceries",style: TextStyle(fontSize: 11)),
                       ],
                     ),
                   ),
-                  Padding(
+                  /*Padding(
                     padding: const EdgeInsets.only(left: 10,right: 10,top: 15),
                     child: Column(
                       children: <Widget>[
