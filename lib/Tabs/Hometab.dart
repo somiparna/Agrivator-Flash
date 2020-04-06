@@ -24,7 +24,7 @@ class _HomeTabState extends State<HomeTab> {
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(top: 20),
@@ -381,6 +381,281 @@ class _HomeTabState extends State<HomeTab> {
                 ),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.only(top: 20,left: 20,),
+              child: Text("Groceries",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 5,right: 10),
+              child: Wrap(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
+                    child: Column(
+                      children: <Widget>[
+                        Material(
+                            child: InkWell(
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                              child: Container(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.all(Radius.circular(35)),
+
+                                  child: Image.asset('images/food.jpg',
+                                      width: 65, height: 65),
+                                ),),
+                            )
+                        ),
+                        Text("Item 1",style: TextStyle(fontSize: 13)),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
