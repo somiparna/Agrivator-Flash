@@ -66,6 +66,23 @@ class _HomeTabState extends State<HomeTab> {
               ),
             ),
             Padding(
+              padding: const EdgeInsets.only(top: 20,left: 20,right: 20),
+                child: Material(
+                    child: InkWell(
+                      onTap: () =>
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) => Error())),
+                      child: Container(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
+
+                          child: Image.asset('images/storea.jpg',
+                               height: 170,fit:BoxFit.fill,width: 500,),
+                        ),),
+                    )
+                )
+            ),
+            Padding(
               padding: const EdgeInsets.only(top: 20),
               child: Row(
                 children: <Widget>[
