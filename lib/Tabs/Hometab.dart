@@ -3,6 +3,7 @@ import 'package:agrivatorflash/Stores/Health.dart';
 import 'package:agrivatorflash/Stores/Meat.dart';
 import 'package:agrivatorflash/Stores/Pet.dart';
 import 'package:agrivatorflash/Stores/Stationary.dart';
+import 'package:flutter/cupertino.dart';
 import '../error.dart';
 import 'package:geolocator/geolocator.dart';
 import '../HomeScreen.dart';
@@ -19,6 +20,20 @@ class HomeTab extends StatefulWidget {
 
 class _HomeTabState extends State<HomeTab> {
   @override
+  Position _currentPosition;
+  _getCurrentLocation() {
+    final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
+
+    geolocator
+        .getCurrentPosition(desiredAccuracy: LocationAccuracy.best)
+        .then((Position position) {
+      setState(() {
+        _currentPosition = position;
+      });
+    }).catchError((e) {
+      print(e);
+    });
+  }
   Widget build(BuildContext context) {
     var size=MediaQuery.of(context).size;
     return Container(
@@ -28,6 +43,28 @@ class _HomeTabState extends State<HomeTab> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Row(
+                children: <Widget>[
+                  if (_currentPosition != null)
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Text(
+                            "LAT: ${_currentPosition.latitude}, LNG: ${_currentPosition.longitude}"),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: FlatButton(
+                      child: Text("Get location"),
+                      onPressed: () {
+                        _getCurrentLocation();
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 20),
               child: Row(
