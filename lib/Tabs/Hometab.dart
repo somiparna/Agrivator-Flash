@@ -76,7 +76,7 @@ class _HomeTabState extends State<HomeTab> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
 
-                          child: SvgPicture.asset('images/agrivator.svg',
+                          child: SvgPicture.asset('images/agrivator1.svg',
                                height: 170,fit:BoxFit.fill,width: 500,),
                         ),),
                     )
@@ -381,7 +381,7 @@ class _HomeTabState extends State<HomeTab> {
                                   child: Container(
 
 
-                                    child: SvgPicture.asset('images/health benefits.svg',
+                                    child: SvgPicture.asset('images/health.svg',
                                       width: 65, height: 65,),
 
                                   ),
@@ -410,7 +410,7 @@ class _HomeTabState extends State<HomeTab> {
                                   child: Container(
 
 
-                                    child: SvgPicture.asset('images/pet food.svg',
+                                    child: SvgPicture.asset('images/pet.svg',
                                       width: 65, height: 65,),
 
                                   ),
@@ -439,7 +439,7 @@ class _HomeTabState extends State<HomeTab> {
                                   child: Container(
 
 
-                                    child: SvgPicture.asset('images/fish & meat.svg',
+                                    child: SvgPicture.asset('images/fish.svg',
                                       width: 65, height: 65,),
 
                                   ),
