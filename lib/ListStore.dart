@@ -79,7 +79,7 @@ class _ListStoreState extends State<ListStorePage> {
                         child: InkWell(
                           onTap: () =>
                               Navigator.of(context)
-                                  .push(MaterialPageRoute(builder: (context) => Error())),
+                                  .push(MaterialPageRoute(builder: (context) => ListItemPage())),
                           child: Container(
                             child: ClipRRect(
                               borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
