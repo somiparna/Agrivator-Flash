@@ -319,7 +319,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: InkWell(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => Error())),
+                                    builder: (context) => ListPage())),
                             child: Container(
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
