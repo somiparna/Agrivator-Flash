@@ -315,24 +315,19 @@ class _HomeTabState extends State<HomeTab> {
                     child: Column(
                       children: <Widget>[
                         ClipOval(
-                          child: Column(
-                            children: <Widget>[
-                              Material(
-                                color: Colors.green,
-                                child: InkWell(
-                                  onTap: () => Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) => Error())),
-                                  child: Container(
-                                    child: SvgPicture.asset(
-                                      'images/fruits.svg',
-                                      width: 65,
-                                      height: 65,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
+                          child: InkWell(
+                            onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => Error())),
+                            child: Container(
+                              color: Theme.of(context).primaryColor,
+                              padding: EdgeInsets.all(size.height*0.015),
+                              child: SvgPicture.asset(
+                                'images/fruits.svg',
+                              ),
+                              height: 65,
+                              width: 65,
+                            ),
                           ),
                         ),
                         Text("Fruits and\nVegetables",
@@ -346,24 +341,19 @@ class _HomeTabState extends State<HomeTab> {
                     child: Column(
                       children: <Widget>[
                         ClipOval(
-                          child: Column(
-                            children: <Widget>[
-                              Material(
-                                color: Colors.green,
-                                child: InkWell(
-                                  onTap: () => Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) => Error())),
-                                  child: Container(
-                                    child: SvgPicture.asset(
-                                      'images/dairy.svg',
-                                      width: 65,
-                                      height: 65,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
+                          child: InkWell(
+                            onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => Error())),
+                            child: Container(
+                              color: Theme.of(context).primaryColor,
+                              padding: EdgeInsets.all(size.height*0.015),
+                              child: SvgPicture.asset(
+                                'images/medicines.svg',
+                              ),
+                              height: 65,
+                              width: 65,
+                            ),
                           ),
                         ),
                         Text("Grocery", style: TextStyle(fontSize: 11)),
@@ -379,7 +369,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: Column(
                             children: <Widget>[
                               Material(
-                                color: Colors.green,
+                                color: Theme.of(context).primaryColor,
                                 child: InkWell(
                                   onTap: () => Navigator.of(context).push(
                                       MaterialPageRoute(
@@ -409,7 +399,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: Column(
                             children: <Widget>[
                               Material(
-                                color: Colors.green,
+                                color: Theme.of(context).primaryColor,
                                 child: InkWell(
                                   onTap: () => Navigator.of(context).push(
                                       MaterialPageRoute(
@@ -440,7 +430,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: Column(
                             children: <Widget>[
                               Material(
-                                color: Colors.green,
+                                color: Theme.of(context).primaryColor,
                                 child: InkWell(
                                   onTap: () => Navigator.of(context).push(
                                       MaterialPageRoute(
@@ -470,7 +460,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: Column(
                             children: <Widget>[
                               Material(
-                                color: Colors.green,
+                                color: Theme.of(context).primaryColor,
                                 child: InkWell(
                                   onTap: () => Navigator.of(context).push(
                                       MaterialPageRoute(
@@ -500,7 +490,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: Column(
                             children: <Widget>[
                               Material(
-                                color: Colors.green,
+                                color: Theme.of(context).primaryColor,
                                 child: InkWell(
                                   onTap: () => Navigator.of(context).push(
                                       MaterialPageRoute(
@@ -530,7 +520,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: Column(
                             children: <Widget>[
                               Material(
-                                color: Colors.green,
+                                color: Theme.of(context).primaryColor,
                                 child: InkWell(
                                   onTap: () => Navigator.of(context).push(
                                       MaterialPageRoute(

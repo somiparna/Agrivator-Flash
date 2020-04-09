@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Agrivator Flash',
       theme: ThemeData(
-        primaryColor: Color(0xFF8DE4AF),
+        primaryColor: Color(0xFFA4CF70),
         accentColor: Color(0xFF2f2e41),
       ),
       home: HomeScreen(),
