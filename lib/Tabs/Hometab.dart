@@ -350,7 +350,7 @@ class _HomeTabState extends State<HomeTab> {
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
                               child: SvgPicture.asset(
-                                'images/medicines.svg',
+                                'images/dairy.svg',
                               ),
                               height: 65,
                               width: 65,
@@ -363,28 +363,23 @@ class _HomeTabState extends State<HomeTab> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 15),
+                    const EdgeInsets.only(left: 10, right: 10, top: 15),
                     child: Column(
                       children: <Widget>[
                         ClipOval(
-                          child: Column(
-                            children: <Widget>[
-                              Material(
-                                color: Theme.of(context).primaryColor,
-                                child: InkWell(
-                                  onTap: () => Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) => Error())),
-                                  child: Container(
-                                    child: SvgPicture.asset(
-                                      'images/medicines.svg',
-                                      width: 65,
-                                      height: 65,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
+                          child: InkWell(
+                            onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => Error())),
+                            child: Container(
+                              color: Theme.of(context).primaryColor,
+                              padding: EdgeInsets.all(size.height*0.015),
+                              child: SvgPicture.asset(
+                                'images/medicines.svg',
+                              ),
+                              height: 65,
+                              width: 65,
+                            ),
                           ),
                         ),
                         Text("Medicines", style: TextStyle(fontSize: 11)),
@@ -393,89 +388,73 @@ class _HomeTabState extends State<HomeTab> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 15),
+                    const EdgeInsets.only(left: 10, right: 10, top: 15),
                     child: Column(
                       children: <Widget>[
                         ClipOval(
-                          child: Column(
-                            children: <Widget>[
-                              Material(
-                                color: Theme.of(context).primaryColor,
-                                child: InkWell(
-                                  onTap: () => Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) => Error())),
-                                  child: Container(
-                                    child: SvgPicture.asset(
-                                      'images/health.svg',
-                                      width: 65,
-                                      height: 65,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
+                          child: InkWell(
+                            onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => Error())),
+                            child: Container(
+                              color: Theme.of(context).primaryColor,
+                              padding: EdgeInsets.all(size.height*0.015),
+                              child: SvgPicture.asset(
+                                'images/health.svg',
+                              ),
+                              height: 65,
+                              width: 65,
+                            ),
                           ),
                         ),
-                        Text("Health and \nBenefits",
-                            style: TextStyle(fontSize: 11)),
+                        Text("Health and\n Benefits",style: TextStyle(fontSize: 11)),
                       ],
                     ),
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 15),
+                    const EdgeInsets.only(left: 10, right: 10, top: 15),
                     child: Column(
                       children: <Widget>[
                         ClipOval(
-                          child: Column(
-                            children: <Widget>[
-                              Material(
-                                color: Theme.of(context).primaryColor,
-                                child: InkWell(
-                                  onTap: () => Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) => Error())),
-                                  child: Container(
-                                    child: SvgPicture.asset(
-                                      'images/pet.svg',
-                                      width: 65,
-                                      height: 65,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
+                          child: InkWell(
+                            onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => Error())),
+                            child: Container(
+                              color: Theme.of(context).primaryColor,
+                              padding: EdgeInsets.all(size.height*0.015),
+                              child: SvgPicture.asset(
+                                'images/pet.svg',
+                              ),
+                              height: 65,
+                              width: 65,
+                            ),
                           ),
                         ),
-                        Text("Pet Food", style: TextStyle(fontSize: 11)),
+                        Text("Pet Foods", style: TextStyle(fontSize: 11)),
                       ],
                     ),
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 15),
+                    const EdgeInsets.only(left: 10, right: 10, top: 15),
                     child: Column(
                       children: <Widget>[
                         ClipOval(
-                          child: Column(
-                            children: <Widget>[
-                              Material(
-                                color: Theme.of(context).primaryColor,
-                                child: InkWell(
-                                  onTap: () => Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) => Error())),
-                                  child: Container(
-                                    child: SvgPicture.asset(
-                                      'images/fish.svg',
-                                      width: 65,
-                                      height: 65,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
+                          child: InkWell(
+                            onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => Error())),
+                            child: Container(
+                              color: Theme.of(context).primaryColor,
+                              padding: EdgeInsets.all(size.height*0.015),
+                              child: SvgPicture.asset(
+                                'images/fish.svg',
+                              ),
+                              height: 65,
+                              width: 65,
+                            ),
                           ),
                         ),
                         Text("Fish and Meat", style: TextStyle(fontSize: 11)),
@@ -484,28 +463,23 @@ class _HomeTabState extends State<HomeTab> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 15),
+                    const EdgeInsets.only(left: 10, right: 10, top: 15),
                     child: Column(
                       children: <Widget>[
                         ClipOval(
-                          child: Column(
-                            children: <Widget>[
-                              Material(
-                                color: Theme.of(context).primaryColor,
-                                child: InkWell(
-                                  onTap: () => Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) => Error())),
-                                  child: Container(
-                                    child: SvgPicture.asset(
-                                      'images/stationery.svg',
-                                      width: 65,
-                                      height: 65,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
+                          child: InkWell(
+                            onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => Error())),
+                            child: Container(
+                              color: Theme.of(context).primaryColor,
+                              padding: EdgeInsets.all(size.height*0.015),
+                              child: SvgPicture.asset(
+                                'images/stationery.svg',
+                              ),
+                              height: 65,
+                              width: 65,
+                            ),
                           ),
                         ),
                         Text("Stationery", style: TextStyle(fontSize: 11)),
@@ -514,122 +488,29 @@ class _HomeTabState extends State<HomeTab> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 15),
+                    const EdgeInsets.only(left: 10, right: 10, top: 15),
                     child: Column(
                       children: <Widget>[
                         ClipOval(
-                          child: Column(
-                            children: <Widget>[
-                              Material(
-                                color: Theme.of(context).primaryColor,
-                                child: InkWell(
-                                  onTap: () => Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                          builder: (context) => Error())),
-                                  child: Container(
-                                    child: SvgPicture.asset(
-                                      'images/electronics.svg',
-                                      width: 65,
-                                      height: 65,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
+                          child: InkWell(
+                            onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => Error())),
+                            child: Container(
+                              color: Theme.of(context).primaryColor,
+                              padding: EdgeInsets.all(size.height*0.015),
+                              child: SvgPicture.asset(
+                                'images/electronics.svg',
+                              ),
+                              height: 65,
+                              width: 65,
+                            ),
                           ),
                         ),
                         Text("Electronics", style: TextStyle(fontSize: 11)),
                       ],
                     ),
                   ),
-                  /*Padding(
-                    padding: const EdgeInsets.only(left: 10,right: 10,top: 15),
-                    child: Column(
-                      children: <Widget>[
-                        Material(
-                            child: InkWell(
-                              onTap: () =>
-                                  Navigator.of(context)
-                                      .push(MaterialPageRoute(builder: (context) => Error())),
-                              child: Container(
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.all(Radius.circular(35)),
-
-                                  child: Image.asset('images/grocery.jpg',
-                                      width: 65, height: 65),
-                                ),),
-                            )
-                        ),
-                        Text("Electronic\nequipments",style: TextStyle(fontSize: 11)),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
-                    child: Column(
-                      children: <Widget>[
-                        Material(
-                            child: InkWell(
-                              onTap: () =>
-                                  Navigator.of(context)
-                                      .push(MaterialPageRoute(builder: (context) => Error())),
-                              child: Container(
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.all(Radius.circular(35)),
-
-                                  child: Image.asset('images/grocery.jpg',
-                                      width: 65, height: 65),
-                                ),),
-                            )
-                        ),
-                        Text("Item 1",style: TextStyle(fontSize: 13)),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
-                    child: Column(
-                      children: <Widget>[
-                        Material(
-                            child: InkWell(
-                              onTap: () =>
-                                  Navigator.of(context)
-                                      .push(MaterialPageRoute(builder: (context) => Error())),
-                              child: Container(
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.all(Radius.circular(35)),
-
-                                  child: Image.asset('images/grocery.jpg',
-                                      width: 65, height: 65),
-                                ),),
-                            )
-                        ),
-                        Text("Item 1",style: TextStyle(fontSize: 13)),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15,right: 14,top: 15),
-                    child: Column(
-                      children: <Widget>[
-                        Material(
-                            child: InkWell(
-                              onTap: () =>
-                                  Navigator.of(context)
-                                      .push(MaterialPageRoute(builder: (context) => Error())),
-                              child: Container(
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.all(Radius.circular(35)),
-
-                                  child: Image.asset('images/grocery.jpg',
-                                      width: 65, height: 65),
-                                ),),
-                            )
-                        ),
-                        Text("Item 1",style: TextStyle(fontSize: 13)),
-                      ],
-                    ),
-                  ),*/
                 ],
               ),
             ), //order now items
