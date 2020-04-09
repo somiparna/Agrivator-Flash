@@ -1,3 +1,4 @@
+import 'package:agrivatorflash/List.dart';
 import 'package:agrivatorflash/Stores/Groceries.dart';
 import 'package:agrivatorflash/Stores/Health.dart';
 import 'package:agrivatorflash/Stores/Meat.dart';
@@ -290,7 +291,7 @@ class _HomeTabState extends State<HomeTab> {
                             child: InkWell(
                               onTap: () =>
                                   Navigator.of(context)
-                                      .push(MaterialPageRoute(builder: (context) => Error())),
+                                      .push(MaterialPageRoute(builder: (context) => ListPage())),
                               child: Container(
 
 
