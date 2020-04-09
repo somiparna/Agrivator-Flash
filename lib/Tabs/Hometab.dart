@@ -1,3 +1,4 @@
+import 'package:agrivatorflash/List.dart';
 import 'package:agrivatorflash/Stores/Groceries.dart';
 import 'package:agrivatorflash/Stores/Health.dart';
 import 'package:agrivatorflash/Stores/Meat.dart';
