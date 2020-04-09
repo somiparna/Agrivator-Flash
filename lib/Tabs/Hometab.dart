@@ -1,4 +1,4 @@
-import 'package:agrivatorflash/List.dart';
+import 'package:agrivatorflash/ListStore.dart';
 import 'package:agrivatorflash/Stores/Groceries.dart';
 import 'package:agrivatorflash/Stores/Health.dart';
 import 'package:agrivatorflash/Stores/Meat.dart';
@@ -319,7 +319,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: InkWell(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => ListPage())),
+                                    builder: (context) => ListStorePage())),
                             child: Container(
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
@@ -345,7 +345,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: InkWell(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => Error())),
+                                    builder: (context) => ListStorePage())),
                             child: Container(
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
@@ -370,7 +370,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: InkWell(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => Error())),
+                                    builder: (context) => ListStorePage())),
                             child: Container(
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
@@ -395,7 +395,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: InkWell(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => Error())),
+                                    builder: (context) => ListStorePage())),
                             child: Container(
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
@@ -420,7 +420,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: InkWell(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => Error())),
+                                    builder: (context) => ListStorePage())),
                             child: Container(
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
@@ -445,7 +445,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: InkWell(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => Error())),
+                                    builder: (context) => ListStorePage())),
                             child: Container(
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
@@ -470,7 +470,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: InkWell(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => Error())),
+                                    builder: (context) => ListStorePage())),
                             child: Container(
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
@@ -495,7 +495,7 @@ class _HomeTabState extends State<HomeTab> {
                           child: InkWell(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => Error())),
+                                    builder: (context) => ListStorePage())),
                             child: Container(
                               color: Theme.of(context).primaryColor,
                               padding: EdgeInsets.all(size.height*0.015),
